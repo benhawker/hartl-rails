@@ -23,6 +23,7 @@ group :development, :test do
   gem 'byebug'
   gem 'capybara'
 	gem 'guard-rspec', require: false
+	gem 'annotate'
 end
 
 group :test do
