@@ -1,18 +1,18 @@
 require 'rails_helper'
 
-describe ApplicatonHelper do
+describe ApplicationHelper do
 
 	describe "full_title" do
-		xit "includes the page title" do
-			expect(full_title("foo")).to eq /foo/
+		it "includes the page title" do
+			expect(full_title("foo")).to match(/foo/)
 		end
 
-		xit "includes the base title" do
-			expect(full_title("foo")).to eq /^Ruby on Rails Tutorial/
+		it "includes the base title" do
+			expect(full_title("foo")).to match(/^Ruby on Rails Tutorial/)
 		end
 
-		xit "does not include a bar for the homepage" do
-			expect(full_title("")).to eq /\|/
+		it "does not include a bar for the homepage" do
+			expect(full_title("")).not_to match(/\|/)
 		end
 	end
 
