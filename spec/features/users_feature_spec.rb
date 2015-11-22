@@ -4,7 +4,7 @@ describe "User pages" do
 
   describe "Home page" do
     it "displays Sample app" do
-      visit user_new_path
+      visit signup_path
       expect(page).to have_selector('h1', text: 'Users')
     end
   end
