@@ -21,10 +21,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'capybara'
+	gem 'guard-rspec', require: false
 end
 
 group :test do
-	gem 'capybara'
 end
 
 group :development do
